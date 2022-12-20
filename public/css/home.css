@@ -1,0 +1,191 @@
+.heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+
+
+.app{
+    display: flex;
+   
+    margin: auto auto;
+    width: 605px;
+    border-bottom: 1px solid gray;
+}
+.desc{
+    display:  flex;
+
+    width: 600px;
+    height: 60px;
+    padding: 2px;
+    margin: auto auto;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    
+}
+
+.category{
+    display:  flex;
+   
+    height: 60px;
+    float: left;
+    
+    
+
+}
+.date{
+    display:  flex;
+    
+   float:  right;
+   height: 60px;
+ border-left:  1px solid gray;
+  
+   
+
+}
+
+input{
+    height: 30px;
+    margin-top: 20px;
+    position: relative;
+    right:70px;
+}
+select{
+    height: 30px;
+    margin-top: 20px;
+    position: relative;
+    right:80px;
+}
+
+#input-task{
+    right: 100px;
+    width: 601px;
+    border: none;
+
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+select:focus, input:focus{
+    outline: none;
+}
+
+#label-heading{
+    font-family: cursive;
+    left: 16px;
+    position: relative;
+}
+#category-label{
+    font-family: cursive;
+    left: 16px;
+    position: relative;
+}
+
+#category{
+    font-family: cursive;
+    left: -71px;
+    position: relative;
+    border: none;
+    opacity: 0.6;
+
+}
+
+#date-label{
+    font-family: cursive;
+    left: 16px;
+    position: relative;
+
+}
+#date-input{
+    font-family: cursive;
+    left: -71px;
+    position: relative;
+    border: none;
+    opacity: 0.6;
+
+}
+
+.display{
+    display: flex;
+    position: relative;
+    top: 225px;
+    right: 571px;
+    margin: auto auto;
+}
+
+
+.item{
+    width: 505px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-size: 21px;
+    font-family: cursive;
+    position: relative; 
+    top: 81px; 
+    margin: auto auto;
+    height: 70px;
+}
+
+#submit-btn{
+    position: relative;
+    top: 94px;
+    width: 100px;
+    height: 40px;
+    background: chocolate;
+    font-family: cursive;
+}
+
+
+#input-checkbox{
+       /* font-size: 36px; */
+       position: relative;
+       left: -4px;
+       top: 4px;
+}
+
+.task-name{
+    display: flex;
+    width: 301px;
+    position: relative;
+    top: -37px;
+    left: 22px;
+}
+.task-date{
+    display: flex;
+    position: relative;
+    top: -59px;
+    width: 86px;
+    left: 327px;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.task-category{
+    display: flex;
+    float: right;
+    position: relative;
+    top: -91px;
+    width: 85px;
+}
+
+
+
+a{
+    display: flex;
+    
+    width: 100px;
+    margin: auto auto;
+    position: relative;
+    top: 33px;
+    left: 50px;
+    height: 40px;
+    text-decoration: none;
+}
+
+#delete-btn{
+    background-color: grey;
+    width: 100px;
+    font-family: cursive;
+}
+

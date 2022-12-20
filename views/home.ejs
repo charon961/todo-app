@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=title%>
+    </title>
+
+    <link rel="stylesheet" href="../public/css/home.css">
+    <script src="https://kit.fontawesome.com/eee9363fe5.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+   <div class="heading">
+    TODO App
+   </div>
+
+
+
+
+   <div class="app">
+
+
+        <form action="/" method="post">
+            <div class="desc">
+                <label for="task" id="label-heading"> DESCRIPTION</label>
+                <input id="input-task" type="text" name="task" required="true" placeholder="What do you need to do?">
+            </div>
+
+            <div class="category">
+                <label  for="task" id="category-label">CATEGORY</label>
+                <select name="category" id="category" value="choose">
+                   <option value="personal">PERSONAL</option>
+                   <option value="work">WORK</option>
+                   <option value="other">OTHER</option>
+                </select>
+
+            </div>
+            <div class="date" >
+                 
+           <label for="date" id="date-label">DUE DATA</label>
+           <input type="date" id="date-input" required="true"  name="date">
+
+            </div>
+
+             
+                <button type="submit" id="submit-btn"> <i class="fa-solid fa-plus"></i> ADD</button>
+             
+            
+               
+             
+               
+             
+           </form>
+
+    
+
+
+
+
+
+        </div>
+
+        <div class="delete">
+
+            <form action="/delete" method="post">
+
+                <a href="#" >
+                    <button id="delete-btn" type="submit"> <i class="fa-solid fa-trash"></i>DELETE</button>
+                </a>
+                    <ul>
+                        <%for(let i of list){%>
+                            <div class="item">
+                                <input type="checkbox" id="input-checkbox" name=<%=i.id%>>
+                                <div class="task-name">
+                                <%=i.task%>
+                                </div>
+                                <div class="task-date">
+                                    <%=i.date%>
+                                </div>
+                
+                                <div class="task-category">
+                                    <%=i.category%>
+                                </div>
+                                
+                            </div>
+                           
+                       <% }%>
+                    </ul>
+                
+                </form>
+
+        </div>
+
+
+
+    
+</body>
+</html>
